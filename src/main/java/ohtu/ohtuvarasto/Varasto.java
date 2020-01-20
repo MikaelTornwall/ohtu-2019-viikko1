@@ -76,8 +76,12 @@ public class Varasto {
         return maara;
     }
 
+    public void tyhjaMetodi() {
+        System.out.println("Olen tyhjä!");
+    }
+    
     // --- Merkkijonoesitys Varasto-oliolle: ----
     public String toString() {
         return ("saldo = " + saldo + ", vielä tilaa " + paljonkoMahtuu());
-    }
+    }        
 }
