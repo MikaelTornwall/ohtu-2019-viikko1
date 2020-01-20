@@ -1,6 +1,5 @@
-package main.ohtuvarasto;
+package ohtu.ohtuvarasto;
 
-import main.ohtuvarasto.Varasto;
 import org.junit.*;
 import static org.junit.Assert.*;
 
