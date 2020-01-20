@@ -32,12 +32,12 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'main.ohtuvarasto.Main'
+        attributes 'Main-Class': 'ohtu.ohtuvarasto.Main'
     }
 }
 
 // Define the main class for the application
-mainClassName = 'main.ohtuvarasto.Main'
+mainClassName = 'ohtu.ohtuvarasto.Main'
 
 jacocoTestReport {
     reports {
