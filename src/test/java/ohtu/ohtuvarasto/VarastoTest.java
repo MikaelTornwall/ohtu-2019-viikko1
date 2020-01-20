@@ -129,6 +129,6 @@ public class VarastoTest {
     @Test
     public void toStringMetodiPalauttaaOikeanMerkkijononOikeillaArvoilla() {
         varasto.lisaaVarastoon(6);
-        assertEquals("saldo = 5.0, vielä tilaa 4.0", varasto.toString());
+        assertEquals("saldo = 6.0, vielä tilaa 4.0", varasto.toString());
     }
 }
