@@ -6,6 +6,10 @@
  * user guide available at https://guides.gradle.org/creating-new-gradle-builds/
  */
 
+ plugins {
+     id 'checkstyle'
+ }
+
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
@@ -13,7 +17,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 
 // Apply the jacoco plugin for jacoco test report support
-apply plugin: "jacoco"  
+apply plugin: "jacoco"
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -49,4 +53,8 @@ jacocoTestReport {
             fileTree(dir: it, exclude: ['main/**'])
         })
     }
+}
+
+run {
+    standardInput = System.in
 }
